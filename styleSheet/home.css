@@ -1,0 +1,147 @@
+body {
+    font-family: "Open sans",sans-serif;
+    background-color: rgb(44, 41, 38);
+}
+#home-header{
+    background-color: rgb(29, 26, 24);
+    height: 5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+}
+header a{
+    text-decoration: none;
+    color: rgb(185, 131, 31);
+    font-size: 1.25rem;
+}
+#logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: rgb(238, 164, 80);
+    text-transform: uppercase;
+}
+header li{
+    list-style: none;
+    text-decoration: none;
+    margin: 0 1rem;
+}
+
+header nav a:hover{
+    color: rgb(228, 163, 44);
+}
+header ul{
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+
+#home-section-one {
+    width: 80%;
+    margin: 2rem auto;
+}
+#home-section-one h1{
+    text-align: center;
+    color: rgb(238, 164, 80);
+    font-size: 1.5rem;
+}
+section ul{
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    list-style: none;
+}
+
+#home-section-one ul li{
+    background-color: rgb(228, 206, 182);
+    border-radius: 6px;
+    overflow: hidden;
+}
+#home-section-one ul li img{
+    height: 15rem;
+    width: 100%;
+    object-fit: cover;
+}
+
+.food-content{
+    padding: .9rem;
+    text-align: center;
+}
+.btn{
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    background-color: rgb(228, 157, 147);
+    border-radius: 4px;
+    padding: 0.5rem 1.5rem;
+}
+.btn:hover{
+    background-color: rgb(221, 134, 34);
+
+}
+#menu-but{
+    width: 3rem;
+    height: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    display: none;
+}
+#menu-but span{
+    width: 100%;
+    height: 3px;
+    background-color: white;
+}
+#aside-draw{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(29, 26, 27);
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+}
+#aside-draw:target {
+    display: block;
+}
+#aside-draw  header{
+    height: 5rem;
+    display: flex;
+    justify-content: flex-end;
+    padding: 0 10px;
+}
+#aside-draw ul{
+    margin: 0;
+    padding: 4rem;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#aside-draw ul li{
+    margin: 0.3rem 0;
+}
+#aside-draw ul li a{
+    text-decoration: none;
+    color: rgb(253 , 239, 213);
+    font-size: 1rem;
+
+}
+
+@media (max-width:35rem) {
+    section ul{
+        grid-template-columns: 100%;
+    }
+    #home-section-one h1{
+        font-size: .7rem;
+    }
+    header ul{
+        display: none;
+    }
+    #menu-but{
+        display: flex;
+    }
+}
