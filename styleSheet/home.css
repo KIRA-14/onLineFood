@@ -112,6 +112,7 @@ section ul{
     display: flex;
     justify-content: flex-end;
     padding: 0 10px;
+    margin: 25px 10px;
 }
 #aside-draw ul{
     margin: 0;
